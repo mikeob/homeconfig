@@ -9,7 +9,7 @@ if [ -f ~/.bashrc ]; then
 fi
 #
 # Set path here:
-PATH=$PATH:.:$HOME/bin:/home/courses/cs3214/bin
+PATH=$PATH:.:$HOME/bin:/home/courses/cs3204/bin
 
 
 # Ignores both pre-spaced & duplicate commands
