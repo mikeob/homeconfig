@@ -17,6 +17,7 @@ if $TERM == "xterm-256color"
   set t_Co=256
 endif
 
+"Don't touch those arrow keys, jerk!
 :noremap <Up> <NOP>
 :noremap <Down> <NOP>
 :noremap <Left> <NOP>
@@ -28,7 +29,8 @@ endif
 "Highlights TODO as Cyan
 :hi Todo term=bold ctermfg=Cyan 
 
-"Used by pathogen
-call pathogen#infect()
-
-
+"Helps Putty with 256 color
+if &term =~ "xterm"
+  "256 color --
+  let &t_Co=256
+endif
