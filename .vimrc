@@ -1,4 +1,5 @@
-:colorscheme zenburn
+set t_Co=256
+:colors zenburn
 :set autoindent
 :set cindent
 :set expandtab
@@ -28,9 +29,3 @@ endif
 
 "Highlights TODO as Cyan
 :hi Todo term=bold ctermfg=Cyan 
-
-"Helps Putty with 256 color
-if &term =~ "xterm"
-  "256 color --
-  let &t_Co=256
-endif
